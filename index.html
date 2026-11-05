@@ -259,7 +259,7 @@
   .hero__num:focus-visible .digit--line .digit-inner{color:var(--accent);-webkit-text-stroke-color:var(--accent)}
 
   .kicker{
-    display:flex;align-items:center;gap:clamp(12px,1.8vw,24px);
+    display:block;text-align:center;
     margin:clamp(10px,1.8vw,22px) 0 0;
     font-family:var(--mono);font-size:clamp(8.5px,.72vw,10.5px);
     letter-spacing:.34em;text-transform:uppercase;color:var(--muted);
@@ -267,9 +267,8 @@
   }
   .js .kicker{opacity:0;letter-spacing:.64em}
   .js.is-ready .kicker{opacity:1;letter-spacing:.34em}
-  .kicker::before,.kicker::after{content:"";height:1px;width:clamp(24px,5.5vw,84px);background:linear-gradient(90deg,transparent,var(--line))}
-  .kicker::after{background:linear-gradient(90deg,var(--line),transparent)}
-  .kicker b{font-weight:400;color:var(--paper)}
+  .kicker b{font-weight:400;color:var(--paper);display:block;margin-bottom:4px}
+  .kicker__role{display:block;color:var(--muted)}
 
   .hero__edge{
     position:absolute;top:50%;z-index:5;
@@ -455,10 +454,10 @@
   .about h2 em{font-style:normal;color:var(--accent)}
   .about__body p{color:var(--muted);font-size:clamp(13px,1.1vw,15px);line-height:1.85;margin-bottom:1.1em;max-width:60ch}
   .about__body p strong{color:var(--paper);font-weight:400}
-  .meta{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2)}
-  .meta li{display:flex;gap:12px}
-  .meta li span{min-width:92px;color:var(--muted)}
-  .meta li b{font-weight:400;color:var(--paper)}
+  .meta{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px;font-family:var(--sans);font-size:13px;letter-spacing:.04em;color:var(--paper)}
+  .meta li{display:flex;gap:14px;align-items:center}
+  .meta li span{min-width:110px;color:var(--muted)}
+  .meta li b{font-weight:500;color:var(--paper)}
   .pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}
   .pill{
     padding:6px 11px;border:1px solid var(--line);border-radius:99px;
@@ -654,7 +653,7 @@
           <span class="digit"><span class="digit-inner">1</span></span><span class="digit digit--line"><span class="digit-inner">9</span></span>
         </div>
       </div>
-      <p class="kicker"><b>Anvesh Maddela</b><span class="kicker__dash">—</span><span>AI &amp; Systems Engineer</span></p>
+      <p class="kicker"><b>Anvesh Maddela</b><span class="kicker__role">AI &amp; Systems Engineer</span></p>
     </div>
 
     <p class="hero__statement">
@@ -702,7 +701,7 @@
 
   <section class="sec work" id="work" aria-labelledby="work-title">
     <div class="work__head">
-      <h2 id="work-title"><b>Selected work</b> — 06 / 24</h2>
+      <h2 id="work-title"><b>Selected work</b> — 07 / 21</h2>
       <a href="https://github.com/19anveshh?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories ↗</a>
     </div>
     <ol class="rows">
@@ -730,11 +729,11 @@
         <span class="row__y">2026</span>
         <span class="row__go" aria-hidden="true">↗</span>
       </a></li>
-      <li><a class="row reveal" href="https://charge-path.vercel.app" target="_blank" rel="noopener noreferrer" style="--d:.15s"
-        data-title="ChargePath" data-tag="EV routing" data-stack="Dijkstra · Node.js · Vanilla JS" data-year="2026">
+      <li><a class="row reveal" href="https://github.com/19anveshh/resolve-ai" target="_blank" rel="noopener noreferrer" style="--d:.15s"
+        data-title="ResolveAI" data-tag="Customer Support · AI Agent" data-stack="LangGraph · SQLite · LangChain · Python" data-year="2026">
         <span class="row__n">04</span>
-        <span class="row__t">ChargePath</span>
-        <span class="row__m">EV route intelligence</span>
+        <span class="row__t">ResolveAI</span>
+        <span class="row__m">Customer support resolution copilot</span>
         <span class="row__y">2026</span>
         <span class="row__go" aria-hidden="true">↗</span>
       </a></li>
@@ -836,8 +835,8 @@
   </section>
 
   <section class="stats" aria-label="Numbers">
-    <div class="stat"><b data-count="24">00</b><span>Public repositories</span></div>
-    <div class="stat"><b data-count="8">00</b><span>Live deployments</span></div>
+    <div class="stat"><b data-count="21">00</b><span>Public repositories</span></div>
+    <div class="stat"><b data-count="5">00</b><span>Live deployments</span></div>
     <div class="stat"><b data-count="2">00</b><span>Hackathon builds</span></div>
     <div class="stat stat--accent"><b>19</b><span>The number</span></div>
   </section>
